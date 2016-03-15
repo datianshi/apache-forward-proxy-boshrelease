@@ -1,17 +1,2 @@
 ---
-httpd-2.4.18/apr-1.5.2.tar.gz:
-  object_id: 248c9e6a-4d36-419d-9c29-9cfe20f19b40
-  sha: 2ef2ac9a8de7f97f15ef32cddf1ed7325163d84c
-  size: 1031613
-httpd-2.4.18/apr-util-1.5.4.tar.gz:
-  object_id: f23360e4-78e5-43f5-a471-a5e805c32dc6
-  sha: 72cc3ac693b52fb831063d5c0de18723bc8e0095
-  size: 874044
-httpd-2.4.18/httpd-2.4.18.tar.gz:
-  object_id: e85c7f9c-ed7a-4c77-9259-0cd3e884fd6f
-  sha: d817d144dd1397efc52b9ce1dfc9e5713e7265e6
-  size: 7051797
-pcre-8.38/pcre-8.38.tar.gz:
-  object_id: 7498e811-d2a4-4bf0-a043-b083c8ac1992
-  sha: 3ab418d0026c2a4e693ec783bd60660debc32b8f
-  size: 2053336
+{}
