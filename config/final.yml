@@ -3,3 +3,4 @@ blobstore:
   provider: s3
   options:
     bucket_name: apache-forward-proxy-release
+final_name: apache
