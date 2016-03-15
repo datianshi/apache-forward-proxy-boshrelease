@@ -1,0 +1,18 @@
+# abort script on any command that exits with a non zero value
+set -ex
+
+tar xzf httpd-2.4.18/httpd-2.4.18.tar.gz
+mkdir httpd-2.4.18/srclib/apr
+mkdir httpd-2.4.18/srclib/apr-util
+
+tar -xvf httpd-2.4.18/apr-1.5.2.tar.gz -C httpd-2.4.18/srclib/apr --strip 1
+tar -xvf  httpd-2.4.18/apr-util-1.5.4.tar.gz -C httpd-2.4.18/srclib/apr-util --strip 1
+
+pushd httpd-2.4.18
+  ./configure --prefix=${BOSH_INSTALL_TARGET} \
+              --with-included-apr \
+              --with-pcre=/var/vcap/packages/pcre-8.38
+
+  make
+  make install
+popd

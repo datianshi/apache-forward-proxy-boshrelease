@@ -1,0 +1,5 @@
+check process apache
+  with pidfile /var/vcap/packages/httpd-2.4.18/logs/httpd.pid
+  start program "/var/vcap/jobs/apache/bin/ctl start"
+  stop program "/var/vcap/jobs/apache/bin/ctl stop"
+  group vcap

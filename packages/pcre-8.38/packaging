@@ -1,0 +1,10 @@
+# abort script on any command that exits with a non zero value
+set -ex
+
+tar xzf pcre-8.38/pcre-8.38.tar.gz
+pushd pcre-8.38
+  ./configure --prefix=${BOSH_INSTALL_TARGET}
+
+  make
+  make install
+popd

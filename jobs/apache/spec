@@ -1,0 +1,22 @@
+---
+name: apache
+templates:
+  ctl.erb: bin/ctl
+  httpd.conf.erb: conf/httpd.conf
+
+packages:
+- pcre-8.38
+- httpd-2.4.18
+
+properties:
+  httpd.port:
+    description: "port that httpd is listening for"
+    default: 8080
+  httpd.username:
+    description: "user name of apache proxy access"
+  httpd.password:
+    description: "password of apache proxy access"
+  httpd.whitelist:
+    description: "white list of IPs"
+    default:
+      - "all"
