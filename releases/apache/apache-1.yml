@@ -1,0 +1,22 @@
+---
+packages:
+- name: httpd-2.4.18
+  version: 65d821324f712785489d803add905d17a23eda63
+  fingerprint: 65d821324f712785489d803add905d17a23eda63
+  sha1: 855b8d3c4332568e325aa2e7a8321267df1ab89d
+  dependencies:
+  - pcre-8.38
+- name: pcre-8.38
+  version: 463fcabc459fe5a2362759a2491a45b532d1bc46
+  fingerprint: 463fcabc459fe5a2362759a2491a45b532d1bc46
+  sha1: 8284d9c96dee190ca97e9504c0369563472ef219
+  dependencies: []
+jobs:
+- name: apache
+  version: f97836c11cc47b9c4f6120a04f2a231a50ff6ff4
+  fingerprint: f97836c11cc47b9c4f6120a04f2a231a50ff6ff4
+  sha1: 56c7f34ef6cfdf440b89448178df1e6ede66839c
+commit_hash: b8823cea
+uncommitted_changes: true
+name: apache
+version: '1'
